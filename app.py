@@ -38,10 +38,10 @@ if submit_button:
 
             # Menampilkan hasil prediksi dengan label deskriptif
             if gnb_new_pred[0] == 0:
-                predicted_condition = "Tidak Ada Resiko"
+                predicted_condition = "Prediksi Kondisi Kesehatan Mental untuk data baru Tidak Ada Resiko"
                 bg_color = "background-color: #d4edda; color: #155724;"  # Hijau terang
             else:
-                predicted_condition = "Resiko Depresi Tinggi"
+                predicted_condition = "Prediksi Kondisi Kesehatan Mental untuk data baru Resiko Depresi Tinggi"
                 bg_color = "background-color: #f8d7da; color: #721c24;"  # Merah terang
             
             # Menampilkan hasil prediksi dengan styling
