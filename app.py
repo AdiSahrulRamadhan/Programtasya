@@ -39,10 +39,14 @@ if submit_button:
             # Menampilkan hasil prediksi dengan label deskriptif
             if gnb_new_pred[0] == 0:
                 predicted_condition = "Tidak Ada Resiko"
+                bg_color = "background-color: #d4edda; color: #155724;"  # Hijau terang
             else:
                 predicted_condition = "Resiko Depresi Tinggi"
+                bg_color = "background-color: #f8d7da; color: #721c24;"  # Merah terang
             
-            st.write(f"Prediksi Kondisi Kesehatan Mental untuk data baru: {predicted_condition}")
+            # Menampilkan hasil prediksi dengan styling
+            st.markdown(f'<div style="{bg_color}; padding: 10px; border-radius: 5px; text-align: center;">'
+                        f'<strong>{predicted_condition}</strong></div>', unsafe_allow_html=True)
         
         except ValueError as e:
             # Menangani kesalahan jika input tidak valid
