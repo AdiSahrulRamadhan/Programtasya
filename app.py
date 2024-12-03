@@ -38,9 +38,9 @@ if submit_button:
 
             # Menampilkan hasil prediksi dengan label deskriptif
             if gnb_new_pred[0] == 0:
-                predicted_condition = "Sehat"
+                predicted_condition = "Tidak Ada Resiko"
             else:
-                predicted_condition = "Terganggu"
+                predicted_condition = "Resiko Depresi Tinggi"
             
             st.write(f"Prediksi Kondisi Kesehatan Mental untuk data baru: {predicted_condition}")
         
